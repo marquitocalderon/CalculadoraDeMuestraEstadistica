@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 75px;
+
+    
+}
+
+/* ESTO ES PARA EL BOTON-MENU */
+/* ACA NO PONGO PUNTO , PORQUE LE PUSE UN ID Y PARA ID SON # <--- ESTE SIMBOLO */
+#boton-menu{
+    font-size: 2em;
+    /* el display: none, es para desaparacerlo , lo hago en pc porque no es necesario , luego le activare en responsive */
+    display: none;
+}
+
+.contenedor-nav{
+    /* ES MAX-WIDTH ES PARA PONERLO UN POCO AL MEDIO Y CUANDO SE USA ESO SE AGREGA  MARGIN: AUTO */
+    max-width: 1000px;
+    margin: auto;
+    /* ESO SERIA TODO Y LUEGO ACOMODO CON DISPLAY FLEX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    z-index: 1000;
+}
+
+.portafolio{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase   ;
+
+}
+
+.menu-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.item{
+    position: relative;
+}
+
+
+
+.item i {
+    left: 5px;
+    position: absolute;
+    color:rgb(253, 250, 252);
+    font-size: 20px;
+}
+
+
+
+
+
+.item a{
+display: block;
+padding: 10px 25px;
+font-size: 18px;
+color: rgb(255, 255, 255);
+font-weight: bolder;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.item a:hover {
+    background-color: rgb(119, 0, 79);
+        color:rgb(247, 243, 243);
+    }
+
+
+.sub-menu{
+position: absolute;
+top: 50 px;
+display: none;
+box-shadow: 0px 5px 5px rgba(153, 12, 12, 0.4);
+background-color: white;
+}
+
+.sub-item{
+    width: 100%;
+    list-style: none;
+}
+
+
+.sub-item a {
+font-size: 17px;
+    text-decoration: none;
+    color: rgb(119, 0, 79);
+    display: block;
+    padding: 18px 30px;
+    font-weight: bold;
+}
+.sub-item a:hover {
+background-color:rgb(119, 0, 79);
+    color: white;
+
+}
+.sub-item i {
+    position: absolute;
+    left: 5px;
+    color: rgb(119, 0, 79);;
+    font-size: 20px;
+}
+
+
+
+
+
+/* para que aparesca la barra */
+.item:hover > .sub-menu {
+      display: initial;
+  }
+
+ /*ULTIMA BARRA  */
+
+/* ultima lista ponerlo asi */
+.ultimo-menu{
+    display: none;
+    right: -141px;
+    top: 57px;
+    list-style: none;
+    position: absolute;
+    box-shadow: 0px 5px 5px rgba(153, 12, 12, 0.4);
+    background-color: white;
+    /* EN CASO QUE QUE NOSE VEA LE PONES BACKGROUND BLANCO */
+}
+
+/* ponerlo un width 100% para en caso que pongas fondo xd */
+.ultimo-item{
+    width: 100%;
+}
+
+/* efecto para que salga xd */
+.sub-item:hover > .ultimo-menu {
+    display: initial;
+
+}
+
+/* EMPEZAMOS CON EL RESPONSIVE(OSEA ADAPTAR A CUALQUIERA DISPOSITIVO) */
+
+/* USO MEDIA PARA ADPATAR LOS DISPOSITIVOS PONGO 1280PX QUE SERA TODO DISPOSTIVOS QUE TENGA MAXIMO 1280PX PARA ABAJO PODRIA PONERLE 600 PARA UN CELULAR PERO LA MAYORIA USA TABLE POR ESO PONGO ESA RESOLUCION */
+
+@media (max-width:1280px) {
+    #boton-menu {
+        display: block;
+        color:rgb(255, 255, 255);
+    }
+    .menu-principal {
+            
+            position:fixed;
+            right: -100%;
+            /* el top le das dependiendo del header si tu header en tu height: 75px; en tu top le pondrias 76px --> top: 76px;  */
+            top: 76px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 50%;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            
+            
+        }
+     .mostrar {
+             right:   0;
+        }
+        .sub-item i{
+            display: none;
+        }
+       
+                
+  .item{
+      width: 100%;
+    background-color:rgb(138, 4, 216);
+      
+  }
+  .contacto{
+    border-bottom: 3px solid rgb(10, 10, 10);
+  }
+  .item a {
+      
+      width: 100%;
+      padding: 10px 20px;
+      color: rgb(243, 237, 237);
+  }
+  .item a:hover {
+      
+      background-color: rgb(238, 101, 101);
+      color: rgb(245, 237, 237);
+  }
+
+.item:hover>.sub-menu {
+    display: none;
+    position: static;
+}
+
+  .sub-menu {
+    width: 100%;
+    position: static;
+    background-color: rgb(243, 238, 236)
+  }
+
+        .sub-menu a {
+           color: rgb(36, 27, 27);
+        }
+
+
+
+
+
+
+  .ultimo-menu{
+    position: static;
+    background-color: rgb(144, 13, 219);
+  }
+
+  .ultimo-menu a{
+    color: white;
+  }
+
+
+  .sub-item:hover>.ultimo-menu {
+      display: none;
+      position: static;
+  }
+
+
+
+
+}
+
+

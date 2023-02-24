@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Muestra</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- ESTO ES EL LINK DE IMPORTACION DE BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="caLculadora.css">
+    <!-- ESO SERIA TODO -->
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fondo.css">
+    <link rel="icon" href="img/fisi2.png">
+</head>
+<body>
+    <header>
+        <nav class="contenedor-nav">
+            <a class="portafolio" href="index.html">Calculadora </a>
+            <ul class="menu-principal" id="menu-principal">
+                <li class="item" ><a href="#">Inicio</a></li>
+                <li class="item" id="item"><a class="contacto" href="#">Contacto </a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li class="sub-item" id="sub-item"><a href="https://wa.me/51950566962/" target="_blank"><i class='bx bxl-whatsapp'></i> WhatsApp</a></li>
+                    <li class="sub-item" id="sub-item"><a class="contacto" href="#"><i class='bx bx-message-square-dots'></i>Redes :</a>
+                        <ul class="ultimo-menu">
+                            <li class="ultimo-item"><a href="https://www.facebook.com/marcoisraelcalderongarcia" target="_blank"><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
+                            <li class="ultimo-item"><a href="https://www.instagram.com/marquitocalderon/" target="_blank"><i class='bx bxl-instagram'></i>Instagran</a></li>
+                            <li class="ultimo-item"><a href="https://www.tiktok.com/@marquitocalderon" target="_blank"><i class='bx bxl-tiktok'></i>TikTok</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            
+                <!-- EL SIMBOLO DEL MENU ESTA IMPORTADO DE UN PAGINA BOXICONS -->
+                <i class='bx bx-menu' id="boton-menu"></i>
+        </nav>
+    </header>
+
+<section class="form-register">
+    <div class="descripcion">
+        <h1>CALCULADORA DE TAMAÑO DE MUESTRA </h1>
+        <p> <br> Utiliza esta calculadora para obtener los valores estadísticos más representativos del conjunto de datos que
+        introduzcas. <br><br>
+        
+        Los valores que puedes obtener con esta calculadora son muy efectivas al hacer el calculo cuantitativo y cualitativo.</p>
+    </div>
+        <div class="titulo">
+            <h2>CUANTITATIVO</h2>
+        </div>
+        <div class="cuantitativo">
+        <div class="grupo">
+            <form action="" id="formulario">
+            <div class="lado1">
+                <h4>SE CONOCE CUANTITATIVO</h4>
+                <div class="combox">
+                    <p class="confianza">ELija su nivel de confianza :</p>
+                    <select name="" id="selector">
+                        <option value="uno">99.7%</option>
+                        <option value="dos">99%</option>
+                        <option value="tres">98%</option>
+                        <option value="cuatro">96%</option>
+                        <option value="cinco">95%</option>
+                        <option value="seis">90%</option>
+                        <option value="siete">80%</option>
+                        <option value="ocho">50%</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <div class="desviacion">
+                        <p>INGRESE LA DESVIACION ESTANDAR:</p>
+                        <input class="controls" type="text" name="desviacion" id="desviacion" placeholder="Desviancion Estandar">
+                    </div>
+                    <div class="error">
+                        <p>INGRESE EL MARGEN DE ERROR:</p>
+                        <input class="controls" type="text" name="error" id="error" placeholder="Ingrese su Margen de Error">
+                    </div>
+
+                    <div class="poblacion">
+                        <p>INGRESE LA POBLACION:</p>
+                        <input class="controls" type="text" name="poblacion" id="poblacion" placeholder="Ingrese la poblacion">
+                    </div>
+                    <p class="resultado1" id="resultado1">La Respuesta Original Saldra Aqui!</p>
+                    
+                    <p class="resultado2" id="resultado2">La Respuesta Redondeado Saldra Aqui!</p>
+                </div>
+            </div>
+            </form>
+            <div class="lado2">
+                <div class="round2">
+                    <div class="imash">
+                        <img src="img/SECONOCEFORMULA.jpg" alt="">
+                    </div>
+                    <div class="botones">
+                        <input class="botons1" type="button" value="Calcular" id="calcular">
+                        <input class="botons1" type="button" value="Limpiar" id="limpiar">
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="grupo">
+            <form action="" id="formulario1">
+                <div class="lado1">
+                    <h4>SE DESCONOCE CUANTITATIVO</h4>
+                    <div class="combox1">
+                        <p class="confianza">ELija su nivel de confianza :</p>
+                        <select name="" id="selector1">
+                            <option value="uno">99.7%</option>
+                            <option value="dos">99%</option>
+                            <option value="tres">98%</option>
+                            <option value="cuatro">96%</option>
+                            <option value="cinco">95%</option>
+                            <option value="seis">90%</option>
+                            <option value="siete">80%</option>
+                            <option value="ocho">50%</option>
+                        </select>
+                    </div>
+                    <div class="inputs1">
+                        <div class="desviacion">
+                            <p>INGRESE LA DESVIACION ESTANDAR:</p>
+                            <input class="controls" type="text" name="desviacion" id="desviacion1"
+                                placeholder="Desviancion Estandar">
+                        </div>
+                        <div class="error">
+                            <p>INGRESE EL MARGEN DE ERROR:</p>
+                            <input class="controls" type="text" name="error" id="error1"
+                                placeholder="Ingrese su Margen de Error">
+                        </div>
+        
+                      
+                        <p class="resultado10" id="resultado10">La Respuesta Original Saldra Aqui!</p>
+        
+                        <p class="resultado20" id="resultado20">La Respuesta Redondeado Saldra Aqui!</p>
+                    </div>
+                </div>
+            </form>
+            <div class="lado2">
+                <div class="round2">
+                    <div class="imash1">
+                        <img src="img/NOSECONOCEXD.jpg" alt="">
+                    </div>
+                    <div class="botones">
+                        <input class="botons1" type="button" value="Calcular" id="calcular1">
+                        <input class="botons1" type="button" value="Limpiar" id="limpiar1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+<section class="form-register">
+    <div class="titulo">
+        <h2>CUALITATIVO</h2>
+    </div>
+    <div class="cuantitativo">
+        <div class="grupo">
+            <form action="" id="formulario3">
+                <div class="lado1">
+                    <h4>SE CONOCE CUALITATIVO</h4>
+                    <div class="combox">
+                        <p class="confianza">ELija su nivel de confianza :</p>
+                        <select name="" id="selector3">
+                            <option value="uno">99.7%</option>
+                            <option value="dos">99%</option>
+                            <option value="tres">98%</option>
+                            <option value="cuatro">96%</option>
+                            <option value="cinco">95%</option>
+                            <option value="seis">90%</option>
+                            <option value="siete">80%</option>
+                            <option value="ocho">50%</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <div class="positiva">
+                            <p>INGRESE LA POSIBILIDAD POSITIVA:</p>
+                            <input class="controls" type="text" name="desviacion" id="positiva"
+                                placeholder="Ingrese la posibilidad positiva">
+                        </div>
+                        <div class="negativa">
+                            <p>INGRESE LA POSIBILIDAD NEGATIVA:</p>
+                            <input class="controls" type="text" name="error" id="negativa"
+                                placeholder="Ingrese la posibilidad negativa">
+                        </div>
+
+                        <div class="error">
+                            <p>INGRESE El MARGEN DE ERROR:</p>
+                            <input class="controls" type="text" name="error" id="error3" placeholder="Ingrese su Margen de Error">
+                        </div>
+
+                        <div class="poblacion">
+                            <p>INGRESE LA POBLACION:</p>
+                            <input class="controls" type="text" name="poblacion" id="poblacion3"
+                                placeholder="Ingrese la poblacion">
+                        </div>
+                        <p class="resultado30" id="resultado30">La Respuesta Original Saldra Aqui!</p>
+
+                        <p class="resultado30" id="resultado40">La Respuesta Redondeado Saldra Aqui!</p>
+                    </div>
+                </div>
+            </form>
+            <div class="lado2">
+                <div class="round2">
+                    <div class="imash">
+                        <img src="img/FORMULACUALTITATIVOSECONOCE.jpg" alt="">
+                    </div>
+                    <div class="botones">
+                        <input class="botons1" type="button" value="Calcular" id="calcular3">
+                        <input class="botons1" type="button" value="Limpiar" id="limpiar3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="grupo">
+                    <form action="" id="formulario4">
+                        <div class="lado1">
+                            <h4>SE DESCONOCE CUALITATIVO</h4>
+                            <div class="combox">
+                                <p class="confianza">ELija su nivel de confianza :</p>
+                                <select name="" id="selector4">
+                                    <option value="uno">99.7%</option>
+                                    <option value="dos">99%</option>
+                                    <option value="tres">98%</option>
+                                    <option value="cuatro">96%</option>
+                                    <option value="cinco">95%</option>
+                                    <option value="seis">90%</option>
+                                    <option value="siete">80%</option>
+                                    <option value="ocho">50%</option>
+                                </select>
+                            </div>
+                            <div class="inputs">
+                        <div class="positiva">
+                            <p>INGRESE LA POSIBILIDAD POSITIVA:</p>
+                            <input class="controls" type="text" name="desviacion" id="positiva4" placeholder="Ingrese la posibilidad positiva">
+                        </div>
+                        <div class="negativa">
+                            <p>INGRESE LA POSIBILIDAD NEGATIVA:</p>
+                            <input class="controls" type="text" name="error" id="negativa4" placeholder="Ingrese la posibilidad negativa">
+                        </div>
+                        
+                        <div class="error">
+                            <p>INGRESE El MARGEN DE ERROR:</p>
+                            <input class="controls" type="text" name="error" id="error4" placeholder="Ingrese su Margen de Error">
+                        </div>
+                                <p class="resultado1" id="resultado50">La Respuesta Original Saldra Aqui!</p>
+                
+                                <p class="resultado2" id="resultado60">La Respuesta Redondeado Saldra Aqui!</p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="lado2">
+                        <div class="round2">
+                            <div class="imash1">
+                                <img src="img/FORMULACUALTITATIVOSEDESCONOCE.jpg" alt="">
+                            </div>
+                            <div class="botones">
+                                <input class="botons1" type="button" value="Calcular" id="calcular40">
+                                <input class="botons1" type="button" value="Limpiar" id="limpiar4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                       <img src="img/calculadora.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE LA CALCULADORA</h2>
+                <p>Es un proyecto que me dejaron de tarea de la Universidad Nacional de San Martin - Peru</p>
+                <p>Posdata: Es mi primer proyecto en diseño web</p>
+            </div>
+            <div class="box">
+                <h2>CONTACTAME</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/marcoisraelcalderongarcia" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/marquitocalderon/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://wa.me/51950566962/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Markus Tlv</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</footer>
+    <script src="calcudora.js"></script>        
+    <script src="menu.js"></script>
+    <script src="jquery/jquery-3.6.3.js"></script>
+    <script src="lista.js"></script>
+
+</body>
+</html>

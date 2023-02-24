@@ -1,0 +1,52 @@
+@media  (max-width:1280px){
+
+
+    
+    .descripcion h1 {
+            font-size: 1.5em;
+            text-align: center;
+            color: rgb(88, 2, 88);
+        }
+    
+        .descripcion p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .titulo{
+    font-size: 1.5em;
+    color:rgb(255, 255, 255);
+}
+.cuantitativo {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.lado1 {
+    width: auto;
+}
+
+.lado2 {
+    width: auto;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.resultado10,.resultado1{
+    margin-top: 0;
+}
+.resultado20 {
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 20px;
+}
+}
